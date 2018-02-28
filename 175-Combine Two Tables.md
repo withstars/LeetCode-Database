@@ -42,7 +42,9 @@ FirstName, LastName, City, State
 直接使用左联结Left join
 
 ```
-SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Person LEFT JOIN Address ON Person.PersonId = Address.PersonId;
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State 
+FROM Person 
+LEFT JOIN Address ON Person.PersonId = Address.PersonId;
 ```
 
 
@@ -52,7 +54,9 @@ SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Perso
 在使用Left Join时，我们也可以使用关键Using来声明我们相用哪个列名来进行联合：
 
 ```
-SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Person LEFT JOIN Address USING(PersonId);
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State 
+FROM Person 
+LEFT JOIN Address USING(PersonId);
 ```
 
 
@@ -62,5 +66,7 @@ SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Perso
 或者我们可以加上Natural关键字，这样我们就不用声明具体的列，MySQL可以自行搜索相同的列：
 
 ```
-SELECT Person.FirstName, Person.LastName, Address.City, Address.State FROM Person NATURAL LEFT JOIN Address;
+SELECT Person.FirstName, Person.LastName, Address.City, Address.State 
+FROM Person 
+NATURAL LEFT JOIN Address;
 ```
