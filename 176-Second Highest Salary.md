@@ -1,6 +1,6 @@
 ### 176. Second Highest Salary
 
-####第二高薪水问题
+#### 第二高薪水问题
 
 Write a SQL query to get the second highest salary from the `Employee` table.
 

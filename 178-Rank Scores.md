@@ -1,6 +1,6 @@
 ### 178. Rank Scores
 
-####分数排行
+#### 分数排行
 
 Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no "holes" between ranks.
 
@@ -33,7 +33,7 @@ For example, given the above `Scores` table, your query should generate the foll
 +-------+------+
 ```
 
-####解法一
+#### 解法一
 
 解题的思路是对于每一个分数，找出表中有多少个大于或等于该分数的分数，不包括其本身，然后按降序排列即可，参见代码如下：
 
